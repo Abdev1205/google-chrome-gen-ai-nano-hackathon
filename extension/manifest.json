@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Ai Bot",
+  "version": "1.0.0",
+  "description": "Custom Ai assitant bot use nano",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/content.tsx"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
